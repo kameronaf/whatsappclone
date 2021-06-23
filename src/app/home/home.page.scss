@@ -1,0 +1,44 @@
+.topmenu{
+  display: flex;
+}
+
+.topmenutext{
+  flex:1;
+}
+
+.topmenutabs{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+  font-size: 12px;
+  margin-bottom: 2px;
+  div{
+    span{
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      padding: 2px;
+
+      background: #fff;
+       color: #075E54;
+      text-align: center;
+
+      font: 9px Arial, sans-serif;
+
+    }
+  }
+  .topmenutabs{
+  margin-left: 15px;
+  justify-content: space-around;
+  font-size: 20px;
+  color: grey;
+  }
+
+  .topmenutabschats{
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  margin-bottom: 2px;
+  }
+
+}

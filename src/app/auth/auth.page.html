@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-button (click)="loggin()" slot="end" >
+      <ion-icon name="log-in" ></ion-icon>
+    </ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label>
+      E-mail
+    </ion-label>
+    <ion-input shape="round" type="email" [(ngModel)]="dataUser.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      Mot de passe
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-button color="secondary" (click)='login()' shape="round" expand="block" >SIGN IN</ion-button>
+
+</ion-content>

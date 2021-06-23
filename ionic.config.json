@@ -1,0 +1,7 @@
+{
+  "name": "whatsappclone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

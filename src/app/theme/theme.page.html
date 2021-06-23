@@ -1,0 +1,33 @@
+<ion-header mode="md">
+  <ion-toolbar >
+    <ion-title>theme</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+ <ion-card mode="ios">
+
+ <div class="form">
+ <ion-item mode="md">
+ <ion-label position="floating">Phone Number</ion-label>
+ <ion-input></ion-input>
+ </ion-item>
+ <ion-button expand="block" mode="md">
+ <b>Login with phone number</b>
+ </ion-button>
+ </div>
+
+ <div class="container">
+ <div class="inner" *ngFor="let colorTheme of colorThemes" (click)="setTheme(colorTheme.color)">
+ <div class="color" [style.background]="colorTheme.color">
+ </div>
+ <br>
+        {{colorTheme.name}}
+ </div>
+ </div>
+
+ </ion-card>
+
+</ion-content>

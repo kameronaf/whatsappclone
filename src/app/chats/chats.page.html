@@ -1,0 +1,19 @@
+<ion-content>
+  <div>
+  <div class="chats" *ngFor="let er of tabDisc" (click)="selectChat(er)">
+      <ion-avatar class="chatsavatar">
+        <img class="chatprofilespic" 
+        src={{er.image}}>
+      </ion-avatar>
+      <div class="chatsname">
+        <div><strong>{{er.nom}}</strong></div>
+        <div><p>Joc complete</p></div>
+
+      </div>
+      <div class="chattime">today</div>
+    </div>
+  </div>
+  <ion-button class="discuss" (click)="goto()">
+    <ion-icon  name="create" ></ion-icon>
+  </ion-button>
+</ion-content>

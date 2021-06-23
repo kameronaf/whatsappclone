@@ -1,0 +1,39 @@
+.chats{
+    color: black;
+}
+.chats{
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    margin: 4px;
+    padding: 4px;
+    border-bottom: solid rgb(231, 229, 229) 0.5px;
+}
+.chatsname{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 2px;
+    margin-top: 4px;
+
+}
+.chatsavatar{
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+
+}
+.chatsprofilepic{
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+    
+}
+.discuss{
+    position: absolute;
+    right:    0;
+    bottom:   0;
+    border-radius: 100%;
+    background-color: rgb(45, 223, 45);
+    
+}

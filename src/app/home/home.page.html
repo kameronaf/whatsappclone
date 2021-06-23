@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <div class="topmenu">
+        <div class="topmenutext">Whatsapp</div>
+        <div class="topmenusearch"><ion-icon name="search-outline"></ion-icon></div>
+        <div class="topmenuicon"><ion-icon name="ellipsis-vertical-outline"></ion-icon></div>
+      </div>
+    </ion-title>
+    <div class="topmenutabs">
+      <div class="topmenucamera"><ion-icon name="camera-outline" routerLink="/home/camera"></ion-icon></div>
+      <div class="topmenutabschats">
+        <ion-tab-button class="topmenuchats" routerLink="/home/chats">CHATS <span>136</span></ion-tab-button>
+        <ion-tab-button class="topmenustatus" routerLink="/home/status">STATUS</ion-tab-button>
+        <ion-tab-button class="topmenucalls" routerLink="/home/call">
+          <ion-icon name="construct"></ion-icon>
+        </ion-tab-button>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-router-outlet></ion-router-outlet>
+
+</ion-content>

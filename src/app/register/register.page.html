@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-input type="file" (change)="ppstore($event)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fill="clear" color="light">
+      NOM
+    </ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.nom" color="light"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      E-mail
+    </ion-label>
+    <ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      Mot de passe
+    </ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
+  </ion-item>
+
+  <br>
+   <ion-button color="primary" (click)='store()' shape="round" expand="block" >SIGN UP</ion-button>
+
+</ion-content>
